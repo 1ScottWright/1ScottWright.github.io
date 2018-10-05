@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-random-animation="false" data-animation="36">
+    <head>
+
+        <!--Meta Tags-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="vcard, resume, personal, portfolio, cv, card, responsive" />
+        <meta name="description" content="vCard / Resume / Personal / Portfolio Template" />
+        <meta name="author" content="cosmos-themes" />
+
+        <!--Page Title-->
+        <title>Scott Wright</title>
+
+        <!--Plugins Css-->
+        <link rel="stylesheet" href="css/plugins.css">
+        <!--Main Styles Css-->
+        <link rel="stylesheet" href="css/style-light.css">
+
+        <link rel="stylesheet" href="css/blue-color.css">
+
+        <script src="js/modernizr.js"></script>
+
+        <!--Favicons-->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    </head>
+
+    <body>
+
+        <!--Preloader Start-->
+        <div class="preloader">
+            <div class="loader">
+                <!--Your Name-->
+                <h4>Scott Wright</h4>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!--Preloader End-->
+
+
+
+        <div id="page">
+
+
+            <!--Header Start-->
+            <header>
+                <div class="header-content">
+
+                    <!--Mobile Header-->
+                    <div class="header-mobile">
+                        <a class="header-toggle"><i class="fas fa-bars"></i></a>
+                        <h2>Scott Wright</h2>
+                    </div>
+
+                    <!--Main Header-->
+                    <div class="header-main" data-simplebar>
+                        <div class="image-container">
+                            <h2 class="header-name">Scott Wright</h2>
+                            <img src="img/profile-img.jpg" alt="profile-pic">
+                        </div>
+
+                        <!--Nav Menus-->
+                        <nav class="nav-menu">
+                            <ul>
+                                <li><a href="index-light.html#home"><span class="nav-menu-icon"><i class="lnr lnr-home"></i></span>Home </a> </li>
+                                <li><a href="index-light.html#about"><span class="nav-menu-icon"><i class="lnr lnr-user"></i></span>About Me</a></li>
+                                <li><a href="index-light.html#resume"><span class="nav-menu-icon"><i class="lnr lnr-license"></i></span>Resume</a></li>
+                                <li><a href="index-light.html#portfolio"><span class="nav-menu-icon"><i class="lnr lnr-briefcase"></i></span>Portfolio</a></li>
+                                <li><a href="index-light.html#blog" class="active"><span class="nav-menu-icon"><i class="lnr lnr-book"></i></span>Blog</a></li>
+                            </ul>
+                        </nav>
+
+
+
+                    </div>
+                </div>
+            </header>
+            <!--Header End-->
+
+
+            <!--Main Start-->
+            <div id="main" class="site-main">
+
+                <div class="blog-page">
+                    <div class="blog-image">
+                        <img src="img/blog/style_graph_big.png" alt="">
+                    </div>
+                    <div class="blog-container">
+                        <div class="row">
+
+                            <!--Blog Heading Start-->
+                            <div class="blog-heading col-md-8 offset-md-2">
+                                <span class="cat">Python Plotting</span>
+                                <h1>Create Your Own Style Sheet</h1>
+                                <span class="blog-date">October 4, 2018</span>
+                            </div>
+                            <!--Blog Heading Start-->
+
+                            <!--Blog Content Start-->
+                            <div class="blog-content col-md-10 offset-md-1">
+                                <p>
+                                  Lately, I have found myself always changing the style of my plots in Python with the same settings.
+                                  I'll start to plot out a graph and then realizet that I need to find some code from the last time I created a
+                                  visual, copy it over, and then make what ever changes I wanted for that particular image.
+                                  <br><br>
+                                  I started reading as much as I could about creating my own style sheet.  It seemed a bit intimidating,
+                                  particularly because I couldn't find a source that went through a step by step process for creating your own
+                                  style sheet.  It took about two seconds of conversation with a friend before I came to the what-is-now-clear
+                                  conclusion that I could take an existing style sheet, open up the file, and figure it out from there.  If you
+                                  can't build it from the ground up, take it apart and try to rebuild that.
+                                  <br><br>
+                                  The fivethirtyeight style sheet was the clear frontrunner in candidates to mimic.  I love their blog, their
+                                  overall style, and their data driven approach to journalism.  I used their style sheet but changed a lot of
+                                    the parameters for color, line size, and then added in my own take on grid lines.  I tend to like a clean look:
+                                    white space, no borders on the top and right of a graph, and de-emphasized x and y tick marks and labels.
+                                  <br><br>
+                                  Defining the style was easy, but getting it to work in my Jupyter notebook was a different story.  I saved the style
+                                  where I was sure it belonged (in the same directory as all the other matplotlib style files).  In the end, I
+                                  decided to create my own directory for my style sheets and to call the sytles with reference to the full file path.
+                                  And that worked!
+
+                                  <br><br>
+                                  You can check out the implementation of the style sheet as well as the style sheet itself by following this link
+                                  to my GitHub repo:<br>  <a href = "https://github.com/1ScottWright/style-sheet-blog-post"><b>1ScottWright GitHub</b></a>
+                                </p>
+                            </div>
+                            <!--Blog Content End-->
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Jquery JS-->
+        <script src="js/jquery.min.js"></script>
+        <!--Plugins JS-->
+        <script src="js/plugins.min.js"></script>
+        <!--Site Main JS-->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
