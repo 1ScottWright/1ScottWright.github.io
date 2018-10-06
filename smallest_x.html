@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-random-animation="false" data-animation="36">
+    <head>
+
+        <!--Meta Tags-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="vcard, resume, personal, portfolio, cv, card, responsive" />
+        <meta name="description" content="vCard / Resume / Personal / Portfolio Template" />
+        <meta name="author" content="cosmos-themes" />
+
+        <!--Page Title-->
+        <title>Scott Wright</title>
+
+        <!--Plugins Css-->
+        <link rel="stylesheet" href="css/plugins.css">
+        <!--Main Styles Css-->
+        <link rel="stylesheet" href="css/style-light.css">
+
+        <link rel="stylesheet" href="css/blue-color.css">
+
+        <script src="js/modernizr.js"></script>
+
+        <!--Favicons-->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    </head>
+
+    <body>
+
+        <!--Preloader Start-->
+        <div class="preloader">
+            <div class="loader">
+                <!--Your Name-->
+                <h4>Scott Wright</h4>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!--Preloader End-->
+
+
+
+        <div id="page">
+
+
+            <!--Header Start-->
+            <header>
+                <div class="header-content">
+
+                    <!--Mobile Header-->
+                    <div class="header-mobile">
+                        <a class="header-toggle"><i class="fas fa-bars"></i></a>
+                        <h2>Scott Wright</h2>
+                    </div>
+
+                    <!--Main Header-->
+                    <div class="header-main" data-simplebar>
+                        <div class="image-container">
+                            <h2 class="header-name">Scott Wright</h2>
+                            <img src="img/profile-img.jpg" alt="profile-pic">
+                        </div>
+
+                        <!--Nav Menus-->
+                        <nav class="nav-menu">
+                            <ul>
+                                <li><a href="index-light.html#home"><span class="nav-menu-icon"><i class="lnr lnr-home"></i></span>Home </a> </li>
+                                <li><a href="index-light.html#about"><span class="nav-menu-icon"><i class="lnr lnr-user"></i></span>About Me</a></li>
+                                <li><a href="index-light.html#resume"><span class="nav-menu-icon"><i class="lnr lnr-license"></i></span>Resume</a></li>
+                                <li><a href="index-light.html#portfolio"><span class="nav-menu-icon"><i class="lnr lnr-briefcase"></i></span>Portfolio</a></li>
+                                <li><a href="index-light.html#blog" class="active"><span class="nav-menu-icon"><i class="lnr lnr-book"></i></span>Blog</a></li>
+                            </ul>
+                        </nav>
+
+
+
+                    </div>
+                </div>
+            </header>
+            <!--Header End-->
+
+
+            <!--Main Start-->
+            <div id="main" class="site-main">
+
+                <div class="blog-page">
+                    <div class="blog-image">
+                        <img src="img/blog/network_nodes.jpg" alt="">
+                    </div>
+                    <div class="blog-container">
+                        <div class="row">
+
+                            <!--Blog Heading Start-->
+                            <div class="blog-heading col-md-8 offset-md-2">
+                                <span class="cat">Python Programming</span>
+                                <h1>Technical Interview Question - Math</h1>
+                                <span class="blog-date">October 6, 2018</span>
+                            </div>
+                            <!--Blog Heading Start-->
+
+                            <!--Blog Content Start-->
+                            <div class="blog-content col-md-10 offset-md-1">
+                                <p>
+                                  In our Outcomes session this week, we had a lecture on how to prepare for a technical interview.  Included
+                                  in the material were a few questions that were logic based or "how would you program" this type of questions.
+                                  One question that got a lot of discussion had to do with a question that was in the lowest common denominator
+                                  category of questions.
+                                  <br><br>
+                                  In particular, it had to do with solving for the smallest value of x such that x was divisible by each integer
+                                  in the range [1,y].
+                                  <br><br>
+                                  I decided to code out a few solutions -- basic brute force, try to optimize the brute force method, and then
+                                  looking to math / logic for a way to get the answer more directly.
+                                  <br><br>
+                                  The more elegant solution involves breaking down each value in the range [1,y] into a prime factorization.  If you
+                                  keep track of each prime number and the maximum number of times that prime is needed, you can then compute the answer
+                                  directly.  I used the 'sympy' library to get the intial list of primes in the range [1,y] and then kept track of the
+                                  occurances in a python dictionary.  The last step is then to take the product of each of the keys of the dictionary
+                                  raised to the power of their item in the dictionary.
+                                  <br><br>
+                                  You can check out the Python code in my GitHub repo:<br>  <a href = "https://github.com/1ScottWright/factors-blog-post"><b>1ScottWright GitHub</b></a>
+                                  <br><br>
+                                  I've also reproduced the prime factorization portion of the code below:
+                                  <img src="img/blog/smallest_x_code_snippet.jpg"  alt="">
+
+                                  <br><br>
+                                </p>
+                            </div>
+                            <!--Blog Content End-->
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Jquery JS-->
+        <script src="js/jquery.min.js"></script>
+        <!--Plugins JS-->
+        <script src="js/plugins.min.js"></script>
+        <!--Site Main JS-->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
