@@ -1567,7 +1567,7 @@ header .header-mobile .header-toggle i {
     top: 0;
     left: 0;
     width: 100%;
-    text-align: left;
+    text-align: center;
     height: 80px;
     background-color: #2a2b30;
     z-index: 10;
